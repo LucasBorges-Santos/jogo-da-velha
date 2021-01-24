@@ -1,6 +1,3 @@
-import os
-
-
 def PegarValores(tab):
     a = 'a  ' + tab.get('a1') + ' | ' + tab.get('a2') + ' | ' + tab.get('a3') + ' '
     b = 'b  ' + tab.get('b1') + ' | ' + tab.get('b2') + ' | ' + tab.get('b3') + ' '
