@@ -26,6 +26,14 @@ def ConferirVitoria(tab):
     return vit
 
 
+def ConferirJogador(jog):
+    if jog == 'X':
+        jog = 'O'
+    else:
+        jog = "X"
+    return jog
+
+
 while True:
     tabuleiro = CriarTabuleiro()
 
@@ -54,10 +62,7 @@ while True:
                 if tabuleiro[Resposta] == " ":
                     tabuleiro[Resposta] = jogador
                     x += 1
-                    if jogador == 'X':
-                        jogador = 'O'
-                    else:
-                        jogador = "X"
+                    jogador = ConferirJogador(jogador)
 
                 else:
                     print('\nJá preenchido, Informe outra opção.\n')
@@ -66,10 +71,7 @@ while True:
                 if tabuleiro[Resposta] == " ":
                     tabuleiro[Resposta] = jogador
                     x += 1
-                    if jogador == 'X':
-                        jogador = 'O'
-                    else:
-                        jogador = "X"
+                    jogador = ConferirJogador(jogador)
 
                 else:
                     print('\nJá preenchido, Informe outra opção.\n')
@@ -79,10 +81,7 @@ while True:
                     tabuleiro[Resposta] = jogador
                     x += 1
 
-                    if jogador == 'X':
-                        jogador = 'O'
-                    else:
-                        jogador = "X"
+                    jogador = ConferirJogador(jogador)
 
                 else:
                     print('\nJá preenchido, Informe outra opção.\n')
